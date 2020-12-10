@@ -20,7 +20,7 @@
             <div class="news-content">
                 <h2 class="section-title wow fadeInUp">News</h2>
                     <div class="news-items">
-                        <a href="">
+                        <a href="#">
                           <div class="news-item wow fadeInUp">
                             <div class="news-item-container">
                              <div class="news-kind clear">
@@ -31,7 +31,7 @@
                             </div>
                           </div>
                         </a>
-                        <a href="">
+                        <a href="#">
                             <div class="news-item wow fadeInUp">
                               <div class="news-item-container">
                                <div class="news-kind clear">
@@ -42,7 +42,7 @@
                               </div>
                             </div>
                           </a>
-                          <a href="">
+                          <a href="#">
                             <div class="news-item wow fadeInUp">
                               <div class="news-item-container">
                                <div class="news-kind clear">
