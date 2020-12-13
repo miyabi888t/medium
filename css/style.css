@@ -358,7 +358,7 @@ header .header-content ul .header-nav-item:hover::after {
   padding-bottom: 53px;
   position: absolute;
   top: -40px;
-  box-shadow: 0px 0px 10px rgba(62, 62, 62, 0.5);
+  box-shadow: 0px 0px 8px rgba(62, 62, 62, 0.5);
 }
 
 @media screen and (min-width: 768px) {
@@ -369,6 +369,7 @@ header .header-content ul .header-nav-item:hover::after {
     width: 100%;
     padding-top: 44px;
     padding-bottom: 39px;
+    box-shadow: 0px 0px 10px rgba(62, 62, 62, 0.5);
   }
 }
 
@@ -540,6 +541,7 @@ header .header-content ul .header-nav-item:hover::after {
   padding-bottom: 11px;
   font-size: 13.5px;
   line-height: 20px;
+  font-weight: 500;
   letter-spacing: 0.7px;
 }
 
@@ -549,6 +551,7 @@ header .header-content ul .header-nav-item:hover::after {
     font-size: 18px;
     line-height: 26px;
     margin-left: auto;
+    font-weight: normal;
     letter-spacing: 0.6px;
     padding-top: 0;
     padding-bottom: 0;
@@ -614,7 +617,7 @@ header .header-content ul .header-nav-item:hover::after {
   background-color: #fff;
   width: 100%;
   padding-bottom: 28px;
-  box-shadow: 0px 0px 10px rgba(62, 62, 62, 0.3);
+  box-shadow: 0px 0px 15px rgba(62, 62, 62, 0.3);
 }
 
 @media screen and (min-width: 768px) {
@@ -923,7 +926,7 @@ header .header-content ul .header-nav-item:hover::after {
 
 .price-wrapper .price-content .price-items table {
   width: 100%;
-  border: solid 1px #707070 !important;
+  border: solid 1px #3E3E3E !important;
   border-collapse: collapse;
   margin-bottom: 7px;
 }
@@ -949,12 +952,12 @@ header .header-content ul .header-nav-item:hover::after {
 }
 
 .price-wrapper .price-content .price-items table td {
-  border-bottom: 1px solid #707070;
+  border-bottom: 1px solid #3E3E3E;
 }
 
 .price-wrapper .price-content .price-items th {
   color: #ffffff;
-  background-color: #707070;
+  background-color: #3E3E3E;
   font-size: 19px;
   letter-spacing: 0.5px;
   font-weight: 500;
@@ -1098,7 +1101,7 @@ header .header-content ul .header-nav-item:hover::after {
   .comments-wrapper .comments-contents .comments-items .comments-item .comments-text {
     font-size: 16px;
     line-height: 24px;
-    width: 76%;
+    width: 75.7%;
   }
 }
 
@@ -1386,9 +1389,15 @@ header .header-content ul .header-nav-item:hover::after {
 
 .contact-wrapper {
   padding-top: 40px;
-  padding-bottom: 39px;
+  padding-bottom: 43px;
   background-image: url(../img/alex-blajan-159378-unsplash.png);
   background-size: cover;
+}
+
+@media screen and (min-width: 768px) {
+  .contact-wrapper {
+    padding-bottom: 39px;
+  }
 }
 
 .contact-wrapper .contact-content {
@@ -1445,6 +1454,8 @@ header .header-content ul .header-nav-item:hover::after {
   .contact-wrapper .contact-content .contact-top .contact-top-text {
     text-align: center;
     font-size: 16px;
+    font-weight: lighter;
+    letter-spacing: -0.2px;
   }
 }
 
@@ -1758,7 +1769,13 @@ header .header-content ul .header-nav-item:hover::after {
 }
 
 .contact-wrapper .contact-content .contact-form .contact-textarea .contact-title {
-  padding-bottom: 2px;
+  padding-bottom: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .contact-wrapper .contact-content .contact-form .contact-textarea .contact-title {
+    padding-bottom: 2px;
+  }
 }
 
 .contact-wrapper .contact-content .contact-form .contact-textarea #textarea {

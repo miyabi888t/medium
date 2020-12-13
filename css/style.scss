@@ -309,7 +309,7 @@ body {
             padding-bottom: 53px;
             position: absolute;
             top: -40px;
-            box-shadow: 0px 0px 10px rgba($color: #3e3e3e, $alpha: 0.5);
+            box-shadow: 0px 0px 8px rgba($color: #3e3e3e, $alpha: 0.5);
             @include mq('md') {
                 top: 0;
                 margin: 0 auto;
@@ -317,6 +317,7 @@ body {
                 width: 100%;
                 padding-top: 44px;
                 padding-bottom: 39px;
+                box-shadow: 0px 0px 10px rgba($color: #3e3e3e, $alpha: 0.5);
             }
             .section-title {
                 padding-top: 40px;
@@ -444,12 +445,14 @@ body {
                     padding-bottom: 11px;
                     font-size: 13.5px;
                     line-height: 20px;
+                    font-weight: 500;
                     letter-spacing: 0.7px;
                     @include mq('md') {
                         width: calc(100% - 300px);
                         font-size: 18px;
                         line-height: 26px;
                         margin-left: auto;
+                        font-weight: normal;
                         letter-spacing: 0.6px;
                         padding-top: 0;
                         padding-bottom: 0;
@@ -505,7 +508,7 @@ body {
             background-color: #fff;
             width: 100%;
             padding-bottom: 28px;
-            box-shadow: 0px 0px 10px rgba($color: #3e3e3e, $alpha: 0.3);
+            box-shadow: 0px 0px 15px rgba($color: #3e3e3e, $alpha: 0.3);
             @include mq('md') {
                 width: 80%;
                 margin: 0 auto;
@@ -656,7 +659,6 @@ body {
                     margin: 0 auto;
                     display: block;
                     width: 100%;
-                    
                     @include mq('md') {
                         position: relative;
                         width: auto;
@@ -718,7 +720,6 @@ body {
                     }
                 } 
             }
-         
         }
     }
     
@@ -743,7 +744,7 @@ body {
                 }
                 table {
                     width: 100%;
-                    border: solid 1px #707070 !important;  
+                    border: solid 1px $text-color !important;  
                     border-collapse: collapse;
                     margin-bottom: 7px;
                     @include mq('md') {
@@ -759,12 +760,12 @@ body {
                         border-top: 1px solid #fff;
                       }
                     td {
-                        border-bottom: 1px solid #707070;
+                        border-bottom: 1px solid $text-color;
                     }
                 }
                 th {
                     color: #ffffff;
-                    background-color: #707070;
+                    background-color: $text-color;
                     font-size: 19px;
                     letter-spacing: 0.5px;
                     font-weight: 500;
@@ -875,7 +876,7 @@ body {
                         @include mq('md') {
                             font-size: 16px;
                             line-height: 24px;
-                            width: 76%;
+                            width: 75.7%;
                         }
                     }
                 }
@@ -1104,9 +1105,12 @@ body {
 
     .contact-wrapper {        
         padding-top: 40px;
-        padding-bottom: 39px;
+        padding-bottom: 43px;
         background-image: url(../img/alex-blajan-159378-unsplash.png);
         background-size: cover;
+        @include mq('md') {
+            padding-bottom: 39px;
+        }
         .contact-content {
             margin: auto; 
             @include mq('md') {
@@ -1144,6 +1148,8 @@ body {
                         @include mq('md') {
                             text-align: center;
                             font-size: 16px;
+                            font-weight: lighter;
+                            letter-spacing: -0.2px;
                         }
                     }
             }
@@ -1197,7 +1203,6 @@ body {
                             @include mq('md') {
                                 right: 51%;
                                 top: 42%;
-                                
                             }
                         }
                         #kind {
@@ -1388,7 +1393,10 @@ body {
                 }
                 .contact-textarea {
                     .contact-title {
-                        padding-bottom: 2px;
+                        padding-bottom: 10px;
+                        @include mq('md') {
+                            padding-bottom: 2px;
+                        }
                     }
                     #textarea {
                         display: block;
