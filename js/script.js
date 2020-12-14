@@ -74,3 +74,12 @@ jQuery('a[href^="#"]').click(function() {
 });
 
  
+//ドロワー用 きちんとドロワーが閉じるように
+jQuery(function (jQuery) {
+  jQuery('.drawer-menu-item').on('click', function () {
+    if (window.innerWidth <= 768) {
+      jQuery('.drawer-toggle').click();
+    }
+  });
+});
+
